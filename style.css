@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* to hide scrollbar */
+  margin: 0;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape") ;
+  background-repeat: no repeat ;
+  font-family: "Open Sans", sans-serif;
+}
+.card {
+  background: #000;
+  opacity: 0.9;
+  color: rgb(255, 255, 255);
+  padding: 2em;
+  border-radius: 1.5em;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px;
+}
+.search {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  margin: 1rem;
+  height: 3.5em;
+  width: 3.5em;
+  background: #7c7c7c3b;
+  color: white;
+}
+
+.search-bar {
+  outline: none;
+  padding: 0.8em;
+  border-radius: 18px;
+  background: #7c7c7c2b;
+  color: white;
+  font-size: 1em;
+  font-family: inherit;
+  width: calc(100%);
+}
+button:hover,
+.search-bar:hover {
+  background: #7c7c7c6b;
+}
+.city{
+  opacity: 0.9;
+  font-size: 10vmin;
+  color: lightpink;
+}
+.temperature {
+  opacity: 0.9;
+  font-size: 9vmin;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.flex-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.description{
+  font-size: 4.5vmin;
+  opacity: 1;
+  margin: 0;
+  text-transform: capitalize;
+}
+.wind,
+.humidity{
+  
+  font-size: 3.5vmin;
+}
+.before-search{
+  display: none;
+}
